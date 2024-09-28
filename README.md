@@ -1,0 +1,1 @@
+An image manipulation program using the linked list data structure.
