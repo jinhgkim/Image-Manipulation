@@ -79,11 +79,14 @@ void Block::rotateRight()
 {
     int height = this->height();
     int width = this->width();
+
+    vector<vector<RGBAPixel>> newData = data;
     for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < width; x++)
         {
-            //
+            newData[y][x] = data[width - 1 - x][y];
         }
     }
+    data = newData;
 }
